@@ -106,8 +106,8 @@ async def recTG():
                 playOK = True
                 playOKD = 30
                 if recD > 1:
-                    os.system('/usr/bin/opusenc /home/pi/record.wav /home/pi/record.oga')
-                    await client.send_file(peer, '/home/pi/record.oga', caption='LoveBirds Message', voice_note=True)
+                    os.system('/usr/bin/opusenc /home/pi/rec.wav /home/pi/rec.oga')
+                    await client.send_file(peer, '/home/pi/rec.oga', caption='LoveBirds Message', voice_note=True)
 
         else:
             #heartBeatLed = False
